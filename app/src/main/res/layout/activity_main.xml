@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.kate.sqliteexample.MainActivity">
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/play_button"
+        android:text="@string/play_button"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:background="@color/colorTrueButton"
+        android:textSize="20sp"
+        android:onClick="letsPlay"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:id="@+id/add_button"
+        android:text="@string/add_button"
+        android:background="@color/colorFalseButton"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/play_button"
+        android:layout_alignLeft="@+id/play_button"
+        android:layout_alignStart="@+id/play_button"
+        android:layout_marginTop="19dp"
+        android:onClick="letsAdd"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:id="@+id/clear_button"
+        android:text="@string/clear_button"
+        android:background="@color/colorClearButton"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/add_button"
+        android:layout_alignLeft="@+id/add_button"
+        android:layout_alignStart="@+id/add_button"
+        android:layout_marginTop="19dp"
+        android:onClick="letsClear"/>
+
+</RelativeLayout>
